@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Mirroring DevTools</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="assets/bootstrap.css" rel="stylesheet" />
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/jquery.min.js"></script>
+    <script src="src/devtools_panel.js"></script>
+
+    <style>
+      ul#messages li {
+        white-space: pre;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex flex-column">
+      <img
+        class="m-2 align-self-center"
+        style="width: 75px"
+        src="assets/app_icon_default.png"
+      />
+      <h1 class="h4 align-self-center">Website<b>Mirroring</b>DevTools</h1>
+
+      <ul id="messages" class="small">
+
+      </ul>
+
+
+      <ul id="options">
+        <li id="option-content">
+          <input id="check-content" type="checkbox" checked />
+          <label id="label-content" for="check-content"
+            >Keep all "No Content" files</label
+          >
+        </li>
+        <li id="option-zip">
+          <input id="check-zip" type="checkbox" checked disabled />
+          <label id="label-zip" for="check-zip"
+            >Compress all assets & download at once
+            <b>(Recommended)</b></label
+          >
+        </li>
+        <li id="option-beautify">
+          <input id="check-beautify" type="checkbox" />
+          <label id="label-beautify" for="check-beautify"
+            >Beautify JS,HTML,CSS code before download.</label
+          >
+        </li>
+        <li id="option-all">
+          <input id="check-all" type="checkbox" checked />
+          <label for="check-all"
+            >Download from all domains in current resources.</label
+          >
+        </li>
+        <li id="option-cache">
+          <input id="check-cache" type="checkbox" checked />
+          <label for="check-cache"
+            >Save resource contents from system cache.</label
+          >
+        </li>
+        <li id="option-xhr">
+          <input id="check-xhr" type="checkbox" />
+          <label id="label-xhr" for="check-xhr"
+            >Include all assets by XHR requests (require page reload).</label
+          >
+        </li>
+      </ul>
+      <div id="refresh">
+        <div id="refresh-tip">Reset/Stop the Ext in case something stuck</div>
+        <!-- <img width="20" src="refresh.svg" alt="Refresh App" /> -->
+      </div>
+      <p id="status"></p>
+      <p id="open-folder"></p>
+      <div id="debug"></div>
+      <div id="version">Version 0.1.8</div>
+    </div>
+  </body>
+</html>

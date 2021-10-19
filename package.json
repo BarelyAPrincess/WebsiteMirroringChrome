@@ -1,0 +1,29 @@
+{
+  "name": "website-mirroring-chrome",
+  "version": "0.0.1",
+  "description": "This extension will automaticlly mirror websites to a local directory using DevTools",
+  "license": "MIT",
+  "main": "src/worker.js",
+  "dependencies": {
+    "native-file-system-adapter": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarelyAPrincess/WebsiteMirroringChrome.git"
+  },
+  "keywords": [
+    "download",
+    "mirror",
+    "remote",
+    "files"
+  ],
+  "author": "Ms. Amelia S. Greene",
+  "bugs": {
+    "url": "https://github.com/BarelyAPrincess/WebsiteMirroringChrome/issues"
+  },
+  "homepage": "https://github.com/BarelyAPrincess/WebsiteMirroringChrome#readme"
+}

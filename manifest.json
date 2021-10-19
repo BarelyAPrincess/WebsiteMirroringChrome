@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Website Mirroring Extension",
+    "description": "This extension will automatically mirror websites to a local directory using DevTools",
+    "version": "0.0.1",
+    "background": {
+        "service_worker": "src/worker.js",
+        "type": "module"
+    },
+    "devtools_page": "devtools_page.html",
+    "action": {
+        "default_title": "Website Mirroring Extension",
+        "default_icon": "assets/app_icon_default.png",
+        "default_popup": "popup_page.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "bookmarks",
+        "storage",
+        "unlimitedStorage",
+        "downloads",
+        "downloads.shelf"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ]
+}
